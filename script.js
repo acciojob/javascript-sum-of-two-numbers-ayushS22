@@ -1,14 +1,14 @@
 let input1 = prompt("Enter the first number:");
 let input2 = prompt("Enter the second number:");
 
-// Convert inputs to numbers
 let num1 = Number(input1);
 let num2 = Number(input2);
 
-// Validation conditions
 if (
-  input1 === "" || input2 === "" ||        // empty input
-  isNaN(num1) || isNaN(num2)              // non-numerical values
+  input1 === "" ||
+  input2 === "" ||
+  isNaN(num1) ||
+  isNaN(num2)
 ) {
   alert("Invalid input. Please enter a valid number.");
 } else {
