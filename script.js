@@ -5,8 +5,10 @@ let num1 = Number(input1);
 let num2 = Number(input2);
 
 if (
-  input1 === "" ||
-  input2 === "" ||
+  input1 === null ||
+  input2 === null ||
+  input1.trim() === "" ||
+  input2.trim() === "" ||
   isNaN(num1) ||
   isNaN(num2)
 ) {
